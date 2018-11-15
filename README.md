@@ -55,3 +55,15 @@ flapjacks
 bar
 baz
 ```
+
+```
+awk '/bar/,/baz/{ print }' <<EOF
+foo
+bar
+flapjacks
+baz
+EOF
+bar
+flapjacks
+baz
+```
